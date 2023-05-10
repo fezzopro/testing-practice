@@ -2,7 +2,7 @@ import calculator from '../modules/calculator.js';
 
 describe('Calculator module Test suit', () => {
   test('add', () => {
-    const newAdd = () => { calculator.add('r', 4); };
+    const newAdd = () => { calculator.add('r', 4); }; // eslint-disable-line no-trailing-spaces
 
     expect(newAdd).toThrow(new Error('Invalid Number'));
     expect(calculator.add(5, 4)).toBe(9);
