@@ -1,4 +1,4 @@
-import calculator from "../modules/calculator";
+import calculator from '../modules/calculator.js';
 describe('Calculator module Test suit', () => {
   test('add', () => {
     const newAdd = () => { calculator.add('r', 4); };

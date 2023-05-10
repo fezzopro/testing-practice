@@ -1,4 +1,4 @@
-import stringLength from '../modules/string';
+import stringLength from '../modules/string.js';
 
 describe('', () => {
   test('string length', () => {
@@ -16,7 +16,7 @@ describe('', () => {
 
   test('String greater than 10 character', () => {
     const newStringLength = () => {
-      console.log(stringLength('1234567890-'));
+      stringLength('1234567890-');
     };
     expect(newStringLength).toThrow(new Error('invalid'));
   });

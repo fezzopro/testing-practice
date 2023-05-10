@@ -1,28 +1,37 @@
 class Calculator {
+  constructor() {
+    this.results = 0;
+  }
   add(a, b) {
-    if (isNaN(a.valueOf()) || isNaN(b.valueOf())) {
+    if (Number.isNaN(Number(a)) || Number.isNaN(Number(b))) {
       throw new Error('Invalid Number');
     }
-    return Number.parseInt(a) + Number.parseInt(b);
+    this.results = Number.parseInt(a, 10) + Number.parseInt(b, 10);
+    return this.results;
   }
+
   subtract(a, b) {
-    if (isNaN(a.valueOf()) || isNaN(b.valueOf())) {
+    if (Number.isNaN(Number(a)) || Number.isNaN(Number(b))) {
       throw new Error('Invalid Number');
     }
-    return Number.parseInt(a) - Number.parseInt(b);
+    this.results = Number.parseInt(a, 10) - Number.parseInt(b, 10);
+    return this.results;
   }
+
   divide(a, b) {
-    if (isNaN(a.valueOf()) || isNaN(b.valueOf())) {
+    if (Number.isNaN(Number(a)) || Number.isNaN(Number(b))) {
       throw new Error('Invalid Number');
     }
-    return Number.parseInt(a) / Number.parseInt(b);
+    this.results = Number.parseInt(a, 10) / Number.parseInt(b, 10);
+    return this.results;
   }
+
   multiply(a, b) {
-    if (isNaN(a.valueOf()) || isNaN(b.valueOf())) {
+    if (Number.isNaN(Number(a)) || Number.isNaN(Number(b))) {
       throw new Error('Invalid Number');
     }
-    return Number.parseInt(a) * Number.parseInt(b);
+    this.results = Number.parseInt(a, 10) * Number.parseInt(b, 10);
+    return this.results;
   }
 }
-
 export default new Calculator();

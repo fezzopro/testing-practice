@@ -1,4 +1,4 @@
-const sum = require('../modules/sum');
+import sum from '../modules/sum.js';
 
 describe('Sum', () => {
   test('adds 1 + 2 to equal 3', () => {

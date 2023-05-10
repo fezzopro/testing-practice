@@ -1,4 +1,4 @@
-import reverseString from "../modules/reverseString";
+import reverseString from '../modules/reverseString.js';
 
 describe('Reverse String Test Suit', () => {
   test('reverseString', () => {
