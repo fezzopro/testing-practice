@@ -1,4 +1,4 @@
-import capitalized from "../modules/capitalize";
+import capitalized from '../modules/capitalize.js';
 
 describe('Capitalized test suit', () => {
   test('empty string', () => {
