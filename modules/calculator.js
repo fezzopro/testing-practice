@@ -2,7 +2,7 @@ class Calculator {
   constructor() {
     this.results = 0;
   }
-  
+
   add(a, b) {
     if (Number.isNaN(Number(a)) || Number.isNaN(Number(b))) {
       throw new Error('Invalid Number');
